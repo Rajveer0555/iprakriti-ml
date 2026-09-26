@@ -1,0 +1,48 @@
+{
+  "algorithm": "Gradient Boosting",
+  "accuracy": 0.5417,
+  "n_train_samples": 159,
+  "n_test_samples": 24,
+  "n_features": 25,
+  "n_classes": 3,
+  "classes": [
+    "Vata-Pitta",
+    "Pitta-Kapha",
+    "Vata-Kapha"
+  ],
+  "top_features": [
+    "Forehead_Size",
+    "Problem_Handling",
+    "Strength",
+    "Lips_Texture",
+    "Memory",
+    "Skin_Color",
+    "Concentration",
+    "Face_Texture",
+    "Grasping_Power",
+    "Lips_Color"
+  ],
+  "trained_on_dummy": false,
+  "all_results": {
+    "rf": {
+      "name": "Random Forest",
+      "accuracy": 0.4167
+    },
+    "gb": {
+      "name": "Gradient Boosting",
+      "accuracy": 0.5417
+    },
+    "svm": {
+      "name": "Support Vector Machine",
+      "accuracy": 0.4167
+    },
+    "knn": {
+      "name": "K-Nearest Neighbors",
+      "accuracy": 0.2083
+    },
+    "lr": {
+      "name": "Logistic Regression",
+      "accuracy": 0.5
+    }
+  }
+}
