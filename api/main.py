@@ -15,8 +15,11 @@ import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from schemas import DoshaScore, ModelInfo, PrakritiInput, PrakritiResult
-
+try:
+    from schemas import DoshaScore, ModelInfo, PrakritiInput, PrakritiResult
+except ImportError:
+    from api.schemas import DoshaScore, ModelInfo, PrakritiInput, PrakritiResult
+    
 MODEL_DIR  = os.path.join(os.path.dirname(__file__), "..", "model")
 MODEL_PATH = os.path.join(MODEL_DIR, "prakriti_model.pkl")
 META_PATH  = os.path.join(MODEL_DIR, "model_meta.json")
